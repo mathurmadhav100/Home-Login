@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home login</title>
+<style type="text/css">
+	.field {
+		width:100px;
+		display:inline-grid
+}
+	.rbutton {
+    	width: auto;
+		margin-left: 250px;
+		margin-top: -35px;
+		height: 50px;
+		width: 80px;
+		font-size: 20px;
+		align: center;
+	}
+	.lbutton {
+		margin-left: 450px;
+		margin-top: -50px;
+		height: 50px;
+		width: 180px;
+		font-size: 20px;
+		align: center;
+	}
+	.Nfield {
+		margin-left: 50px;
+		font-size: 22px;
+	}
+	.sbutton {
+		margin-left: 25px;
+		margin-bottom: -40px;
+		height: 50px;
+		width: 80px;
+		font-size: 20px;
+		align: center;
+		margin-top: -5px;
+	}
+	.pno {
+		margin-left: 10px;
+	}
+	.name {
+		margin-left: 127px;
+	}
+	.uname {
+		margin-left: 73px;
+	}
+	.psd {
+		margin-left: 80px;
+	}
+	.fcap {
+		padding-top: 30px;
+	}
+</style>
+<link href="Buttoncss.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<h1 align="center"><font size="8">Sign Up Page</font></h1>
+<figure><img src="Gate img.jpeg" width="261" height="297" alt=""/>
+	<br>
+<figcaption class="fcap"><font size="6" class="fcap">This is login page for 62 residents only. Please exit if you are not a resident of 62 Engineers Estate.</font></figcaption></figure>
+	<form id="form1" name="form1" method="POST" action="result.php">
+	  <div id="field" class="Nfield">
+		<label for="textfield"><font size="6">Name: </font></label>
+		<input type="text" name="name" id="name" class="name"><br>
+		<label for="textfield"><br>
+			<font size="6">Username: </font></label>
+		<input type="text" name="uname" id="username" class="uname"><br>
+        <label for="password"><br>
+		<font size="6">Password: </font></label>
+        <input type="password" name="password" id="password" class="psd"><br>
+		<label for="textfield"><br>
+		<font size="6">Phone Number: </font></label>
+		<input type="tel" name="phno"  placeholder="+XX XXXXXXXXXX" class="pno"><br>
+	  </div><br>
+	<div id="button" class="button">
+		<div id="sbutton" class="sbutton"> 
+		<button type="submit" class="sbutton">Submit</button></div>
+		<div id="rbutton" class="rbutton">
+		<button type="reset" class="rbutton">Reset</button></div>
+		<div id="lbutton" class ="lbutton">
+		<button type="button" class="lbutton" form="form1" formaction="" title="Log In Page" value="Log In Page">Log in Page</button></div>
+	</div>
+	</form>
+</body>
+</html>
